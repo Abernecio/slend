@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'webfontregular';
     src: url('fonts/fieldwork-geo-regular-webfont.woff2') format('woff2'),
-         url('fonts/fieldwork-geo-regular-webfont.woff') format('woff');
+        url('fonts/fieldwork-geo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,6 +13,7 @@
     min-width: 100%;
     max-height: 100%;
     opacity: 0.5;
+    z-index: -1;
 }
 
 #title {
@@ -25,24 +26,39 @@
     z-index: 1;
 }
 
-ul {
+#btnLang {
+    width: auto;
+    margin: auto;
+}
+
+#btnEN {
     font-family: webfontregular;
-    list-style-type: none; /* Remove as balas */
-    margin: 0; /*Remove as margens default do browser*/
-    padding: 0; /*Remove o padding default do browser*/
-    z-index: 1;
+    background-color: black;
+    margin: auto;
+    width: 10%;
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
-li {
-    float: left;
-    position: relative;
-    left: 45%;
+#btnEN a {
+    text-decoration: none;
+    color: white;
 }
 
-a {
+#btnPT {
+    font-family: webfontregular;
+    background-color: black;
+    margin: auto;
+    width: 10%;
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
 
-    display: block;
-    padding: 8px;
-    background-color: white;
-    z-index: 1;
+#btnPT a {
+    text-decoration: none;
+    color: white;
 }
